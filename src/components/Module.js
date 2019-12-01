@@ -16,8 +16,10 @@ const Module = () => {
 
   // Get data from backend using url
   useEffect(() => {
-    axios.get(`http://localhost:3001/index/${moduleName}`)
+    axios.get(`http://localhost:3001/api/${moduleName}`)
       .then((response) => {
+        // eslint-disable-next-line no-undef
+        window.scrollTo(0, 0)
         setCurrentModule(response.data)
       })
       // run this effect only if url parameter changes
@@ -77,8 +79,11 @@ const Module = () => {
   return (
     <div>
       <h1>{moduleName}</h1>
+      <br />
       <p>This module is not found in the system, sorry :(</p>
+      <br />
       <p><Link className="back" to="/">Back to index</Link></p>
+      <br />
     </div>
   )
 }
