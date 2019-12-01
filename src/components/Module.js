@@ -16,7 +16,7 @@ const Module = () => {
 
   // Get data from backend using url
   useEffect(() => {
-    axios.get(`http://localhost:3001/api/${moduleName}`)
+    axios.get(`/api/${moduleName}`)
       .then((response) => {
         // eslint-disable-next-line no-undef
         window.scrollTo(0, 0)

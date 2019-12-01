@@ -19,7 +19,7 @@ const App = () => {
   as there is no way to change the modules once they are fetched.
   */
   useEffect(() => {
-    axios.get('http://localhost:3001/api')
+    axios.get('/api')
       .then((response) => {
         // eslint-disable-next-line no-undef
         window.scrollTo(0, 0)

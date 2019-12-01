@@ -1,7 +1,7 @@
 {
   "extends": "airbnb",
   "rules": {
-    // I disabled semicolons because my current workplace has them disabled too and this looked better for me
+    // I disabled semicolons because in my ohtuprojekti they are disabled too and this looked better for me
     "semi": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
